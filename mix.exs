@@ -5,16 +5,22 @@ defmodule BotDiscord.MixProject do
     [
       app: :testebot,
       version: "0.1.0",
-      elixir: "~> 1.12",
+      elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
   end
 
-  # Run "mix help deps" for examples and options.
+  def application do
+    [
+      mod: {BotDiscord.Application, []},
+      extra_applications: [:logger]
+    ]
+  end
+
   defp deps do
     [
-      {:nostrum, "~> 0.10"},
+      {:nostrum, "~> 0.8"},
       {:httpoison, "~> 1.8"},
       {:jason, "~> 1.2"}
     ]
