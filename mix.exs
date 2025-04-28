@@ -22,6 +22,7 @@ defmodule BotDiscord.MixProject do
     [
       {:nostrum, "~> 0.8"},
       {:httpoison, "~> 1.8"},
+      {:hackney, "~> 1.17"},
       {:jason, "~> 1.2"}
     ]
   end
