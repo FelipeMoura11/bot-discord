@@ -3,7 +3,6 @@ defmodule BotDiscord.Application do
 
   def start(_type, _args) do
     children = [
-      BotDiscord.Consumer,
       BotDiscord.CommandHandler
     ]
 
