@@ -21,8 +21,8 @@ defmodule BotDiscord.MixProject do
   defp deps do
     [
       {:nostrum, "~> 0.8"},
+      {:req, "~> 0.4.12"},
       {:httpoison, "~> 1.8"},
-      {:hackney, "~> 1.17"},
       {:jason, "~> 1.2"}
     ]
   end
