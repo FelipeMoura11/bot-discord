@@ -2,11 +2,6 @@
 
 Este projeto é um bot para o Discord desenvolvido em Elixir, utilizando as bibliotecas Nostrum e Req. O bot interage com APIs externas para trazer imagens e curiosidades sobre gatos e cachorros, respondendo a comandos específicos enviados pelos usuários no Discord.
 
-Com o Nostrum, o bot consegue gerenciar a comunicação com o servidor Discord de forma eficiente, respondendo a mensagens e comandos dos usuários em tempo real. Já a Req é utilizada para fazer requisições HTTP a APIs externas, permitindo que o bot traga dados como imagens e fatos aleatórios sobre os animais.
-
-Os usuários podem interagir com o bot através de comandos simples, como /gato ou /cachorro, e receberão uma resposta com informações divertidas, como uma imagem e um fato interessante sobre o animal escolhido. O bot também pode ser facilmente expandido para incluir mais funcionalidades e interações, conforme necessário.
-## Funcionalidades
-
 O bot suporta os seguintes comandos:
 
 - `!ping`: Responde com "Pong!".
@@ -19,7 +14,7 @@ O bot suporta os seguintes comandos:
 
 - **Elixir**: Linguagem de programação funcional usada para desenvolver o bot.
 - **Nostrum**: Biblioteca Elixir para interagir com a API do Discord.
-
+- **Req**: Biblioteca Elixir para fazer requisições HTTP a APIs externas. Usada para buscar imagens e fatos aleatórios sobre gatos e cachorros, ampliando a funcionalidade do bot com dados externos.
 ### APIs Externas
 
 - **ApiCat**: API para obter imagens e fatos aleatórios de gatos.
