@@ -1,6 +1,6 @@
 # Bot Discord com APIs de Gatos e Cachorros
 
-Este projeto é um bot para o Discord desenvolvido em Elixir utilizando a biblioteca Nostrum. Ele interage com APIs externas para trazer imagens e fatos aleatórios sobre gatos e cachorros. O bot responde a comandos específicos enviados pelos usuários no Discord.
+Este projeto é um bot para o Discord desenvolvido em Elixir utilizando a biblioteca Nostrum/Req. Ele interage com APIs externas para trazer imagens e fatos aleatórios sobre gatos e cachorros. O bot responde a comandos específicos enviados pelos usuários no Discord.
 
 ## Funcionalidades
 
