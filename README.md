@@ -58,7 +58,7 @@ config :nostrum,
   token: "SEU_TOKEN_AQUI"
 Substitua "SEU_TOKEN_AQUI" pelo token do seu bot, que pode ser obtido após criar o bot no Discord Developer Portal.
 
-Passo 4: Rodar o Bot
+ ### Passo 4: Rodar o Bot
 Para iniciar o bot, execute o comando abaixo:
 
 bash
