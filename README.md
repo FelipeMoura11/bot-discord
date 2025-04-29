@@ -36,6 +36,7 @@ Clone o repositório para sua máquina local:
 
 ```bash
 git clone https://github.com/FelipeMoura11/bot-discord.git
+
 Passo 2: Instalar Dependências
 Dentro do diretório do projeto, instale as dependências necessárias:
 
