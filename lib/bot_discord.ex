@@ -28,7 +28,7 @@ defmodule BotDiscord do
         Api.create_message(msg.channel_id, imagem)
 
 
-      ["!dogfact"] ->
+      ["!cachorrofato"] ->
         fato = ApiDogFact.fato_aleatorio()
         Api.create_message(msg.channel_id, fato)
 
