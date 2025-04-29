@@ -68,4 +68,4 @@ iex -S mix
 Agora, seu bot estará online e pronto para responder aos comandos no seu servidor Discord.
 
 
-```bash
+
