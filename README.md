@@ -39,7 +39,7 @@ Além disso, será necessário configurar uma conta no Discord e criar um bot, g
 Clone o repositório para sua máquina local:
 
 ```bash
-git clone https://github.com/FelipeMoura11/bot-discord.git
+git clone https://github.com/FelipeMoura11/bot-discord
 ```
 
 ### 📦 Passo 2: Instalar Dependências
