@@ -34,17 +34,19 @@ Além disso, será necessário configurar uma conta no [Discord](https://discord
 
 Clone o repositório para sua máquina local:
 
-```bash
+
 git clone https://github.com/FelipeMoura11/bot-discord.git
 
-Passo 2: Instalar Dependências
+### Passo 2: Instalar Dependências
 Dentro do diretório do projeto, instale as dependências necessárias:
 
 bash
 Copiar
 Editar
+cd bot-discord
 mix deps.get
-Passo 3: Configurar o Token do Bot
+
+### Passo 3: Configurar o Token do Bot
 Crie um arquivo de configuração config/config.exs e adicione o token do seu bot do Discord:
 
 elixir
@@ -54,6 +56,8 @@ use Mix.Config
 
 config :nostrum,
   token: "SEU_TOKEN_AQUI"
+Substitua "SEU_TOKEN_AQUI" pelo token do seu bot, que pode ser obtido após criar o bot no Discord Developer Portal.
+
 Passo 4: Rodar o Bot
 Para iniciar o bot, execute o comando abaixo:
 
@@ -62,3 +66,6 @@ Copiar
 Editar
 iex -S mix
 Agora, seu bot estará online e pronto para responder aos comandos no seu servidor Discord.
+
+
+```bash
