@@ -74,7 +74,7 @@ Antes de rodar o bot, você precisa ter o Elixir instalado na sua máquina. Se v
     ```bash
     mix run --no-halt
     ```
-
+<!--
 ### Com Docker 🐋
 
 ```bash
