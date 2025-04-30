@@ -1,6 +1,6 @@
 # 🤖 Botzilla - Bot de Discord com Elixir
 
-Botzilla é um bot de Discord desenvolvido em **Elixir** como parte de um projeto acadêmico da disciplina de **Programação Funcional**. Ele integra múltiplas APIs externas e responde a comandos do Discord de maneira funcional e modular.
+Botzilla é um bot de Discord desenvolvido em **Elixir** como parte de um projeto acadêmico. Ele integra múltiplas APIs externas e responde a comandos do Discord de maneira funcional e modular.
 
 ## 📚 Contexto Acadêmico
 
