@@ -1,6 +1,24 @@
-# Botzilla - Bot para Discord
+# 🤖 Botzilla - Bot de Discord com Elixir
 
-**Botzilla** é um bot desenvolvido para o Discord, projetado para entreter e engajar os usuários com uma variedade de comandos interativos, como piadas, informações sobre o clima, jogos gratuitos, e muito mais! Este bot foi desenvolvido com Elixir e a biblioteca Nostrum para facilitar a interação com a API do Discord.
+Botzilla é um bot de Discord desenvolvido em **Elixir** como parte de um projeto acadêmico da disciplina de **Programação Funcional**. Ele integra múltiplas APIs externas e responde a comandos do Discord de maneira funcional e modular.
+
+## 📚 Contexto Acadêmico
+
+Este bot faz parte de um projeto da disciplina **Programação Funcional**, com os seguintes objetivos:
+
+- Aplicar conceitos de programação funcional na prática.
+- Utilizar **Elixir** como linguagem funcional moderna.
+- Integrar múltiplas **APIs REST**.
+- Modularizar o código com funções puras e responsabilidades bem definidas.
+- Empacotar a aplicação usando **Docker** para facilitar a execução e entrega.
+
+## 🔧 Tecnologias Utilizadas
+
+- **Elixir**: Linguagem funcional usada para toda a lógica do bot.
+- **Nostrum**: Biblioteca para integrar bots com a API do Discord.
+- **Req**: Cliente HTTP moderno e simples usado para consumir as APIs externas.
+- **Docker**: Empacotamento do projeto para execução em containers.
+
 
 ## Funcionalidades
 
@@ -12,7 +30,7 @@ Botzilla oferece os seguintes comandos:
 - `!clima`: Envia informações resumidas sobre o clima.
 - `!piada`: Envia uma piada aleatória.
 - `!nba <time>`: Pesquisa e envia informações sobre um time de basquete da NBA.
-- `!jogos`: Envia uma lista de jogos de futebol.
+- `!jogos`: Envia uma lista de jogos de futebol do dia.
 - `!jogosgratis`: Envia uma lista de jogos gratuitos disponíveis para PC.
 
 ### APIs Integradas
@@ -21,7 +39,7 @@ Botzilla oferece os seguintes comandos:
 - **Meowfacts**: Para fatos aleatórios de gatos.
 - **Weather API**: Para informações sobre o clima.
 - **Balldontlie API**: Para informações sobre times de basquete da NBA.
-- **Football API**: Envia uma lista de jogos de futebol do dia. 
+- **Football API**: Para buscar os jogos de futebol do dia. 
 - **FreeToGame API**: Para buscar jogos gratuitos para PC.
 
 ## Instalação
@@ -30,7 +48,7 @@ Botzilla oferece os seguintes comandos:
 
 Antes de rodar o bot, você precisa ter o Elixir instalado na sua máquina. Se você ainda não tem o Elixir, você pode seguir as instruções de instalação no [site oficial do Elixir](https://elixir-lang.org/install.html).
 
-### Rodando o Bot
+### Rodando o Bot 🤖
 
 1. Clone o repositório:
 
@@ -56,5 +74,20 @@ Antes de rodar o bot, você precisa ter o Elixir instalado na sua máquina. Se v
     ```bash
     mix run --no-halt
     ```
+
+### Com Docker 🐋
+
+```bash
+docker build -t botzilla .
+docker run -e DISCORD_TOKEN=seu_token_aqui botzilla
+```
+
+### Manualmente
+
+```bash
+mix deps.get
+mix run --no-halt
+```
+
 
 Isso iniciará o Botzilla no seu servidor Discord.
