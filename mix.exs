@@ -23,6 +23,7 @@ defmodule BotDiscord.MixProject do
       {:nostrum, "~> 0.8"},
       {:req, "~> 0.4.12"},
       {:httpoison, "~> 1.8"},
+      {:timex, "~> 3.7"},
       {:jason, "~> 1.2"}
     ]
   end

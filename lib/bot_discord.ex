@@ -4,35 +4,49 @@ defmodule BotDiscord do
   alias Nostrum.Api
   alias BotDiscord.Command.ApiCat
   alias BotDiscord.Command.ApiCatFact
-  alias BotDiscord.Command.ApiDog
-  alias BotDiscord.Command.ApiDogFact
-
+  alias BotDiscord.Command.ApiWeather
+  alias BotDiscord.Command.ApiJoke
+  alias BotDiscord.Command.NbaAPI
+  alias BotDiscord.Command.FootballApi
+  alias BotDiscord.Command.FreeToGame
 
   def handle_event({:MESSAGE_CREATE, msg, _ws_state}) do
-    IO.inspect(msg, label: "Mensagem recebida")
+    content = msg.content
 
-    case String.split(msg.content, " ", parts: 2) do
-      ["!ping"] ->
+    cond do
+      content == "!ping" ->
         Api.create_message(msg.channel_id, "Pong!")
 
-      ["!gato"] ->
+      content == "!gato" ->
         imagem = ApiCat.imagem_aleatoria()
         Api.create_message(msg.channel_id, imagem)
 
-      ["!gatofato"] ->
-      resposta = ApiCatFact.fato_aleatorio()
-      Api.create_message(msg.channel_id, "🐱 Fato aleatório: " <> resposta)
+      content == "!gatofato" ->
+        resposta = ApiCatFact.fato_aleatorio()
+        Api.create_message(msg.channel_id, "🐱 Fato aleatório: " <> resposta)
 
-      ["!cachorro"] ->
-        imagem = ApiDog.imagem_aleatoria()
-        Api.create_message(msg.channel_id, imagem)
+      content == "!clima" ->
+        clima = ApiWeather.clima_resumido()
+        Api.create_message(msg.channel_id, "🌤️ Clima: " <> clima)
 
+      content == "!piada" ->
+        piada = ApiJoke.piada_aleatoria()
+        Api.create_message(msg.channel_id, "😂 Piada: " <> piada)
 
-      ["!cachorrofato"] ->
-        fato = ApiDogFact.fato_aleatorio()
-        Api.create_message(msg.channel_id, fato)
+      String.starts_with?(content, "!nba ") ->
+        query = String.trim_leading(content, "!nba ") |> String.trim()
+        resposta = NbaAPI.buscar_time(query)
+        Api.create_message(msg.channel_id, resposta)
 
-      _ ->
+      content == "!jogoshoje" ->
+        resposta = FootballApi.get_matches()
+        Api.create_message(msg.channel_id, resposta)
+
+      content == "!jogosgratis" ->
+        resposta = FreeToGame.buscar_jogos_pc_aleatorios()
+        Api.create_message(msg.channel_id, resposta)
+
+      true ->
         :ignore
     end
   end

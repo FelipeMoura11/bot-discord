@@ -22,4 +22,4 @@ botdiscord-*.tar
 # Temporary files, for example, from tests.
 /tmp/
 
-config/config.exs
+
