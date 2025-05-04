@@ -22,4 +22,6 @@ botdiscord-*.tar
 # Temporary files, for example, from tests.
 /tmp/
 
+#ignora env com o token
+.env
 

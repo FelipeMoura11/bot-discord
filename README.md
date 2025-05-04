@@ -53,7 +53,7 @@ Antes de rodar o bot, você precisa ter o Elixir instalado na sua máquina. Se v
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/FelipeMoura11/botzilla.git
+    git clone https://github.com/FelipeMoura11/bot-discord.git
     cd botzilla
     ```
 

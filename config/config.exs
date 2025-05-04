@@ -1,6 +1,6 @@
 import Config
 
 config :nostrum,
-  token: "TOKEN_DISCORD",
+  token: System.get_env("DISCORD_BOT_TOKEN"),
   gateway_intents: :all,
   ffmpeg: nil
