@@ -74,8 +74,8 @@ Antes de rodar o bot, você precisa ter o Elixir instalado na sua máquina. Se v
     ```bash
     mix run --no-halt
     ```
-🚀 Como Executar o Botzilla
-Usando Docker 🐳
+
+## Como Executar Usando Docker 🐳
 Build da imagem:
 ``` bash
 docker build -t botzilla .
