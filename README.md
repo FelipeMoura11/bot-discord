@@ -54,7 +54,7 @@ Antes de rodar o bot, você precisa ter o Elixir instalado na sua máquina. Se v
 
     ```bash
     git clone https://github.com/FelipeMoura11/bot-discord.git
-    cd botzilla
+    cd bot-discord
     ```
 
 2. Instale as dependências:
@@ -78,7 +78,7 @@ Antes de rodar o bot, você precisa ter o Elixir instalado na sua máquina. Se v
 ## Como Executar Usando Docker 🐳
 Build da imagem:
 ``` bash
-docker build -t botzilla .
+docker build -t botzilla 
 ```
 Execução do container (substitua seu_token_aqui pelo seu token real):
 ``` bash
