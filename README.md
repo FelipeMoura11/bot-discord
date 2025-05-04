@@ -74,20 +74,30 @@ Antes de rodar o bot, você precisa ter o Elixir instalado na sua máquina. Se v
     ```bash
     mix run --no-halt
     ```
-
-### Com Docker 🐋
-
-```bash
+🚀 Como Executar o Botzilla
+Usando Docker 🐳
+Build da imagem:
+``` bash
 docker build -t botzilla .
-docker run -e DISCORD_TOKEN=seu_token_aqui botzilla
 ```
+Execução do container (substitua seu_token_aqui pelo seu token real):
+``` bash
+docker run -e DISCORD_BOT_TOKEN=seu_token_aqui botzilla
+```
+💡 Dica: Você também pode utilizar um arquivo .env com a variável DISCORD_BOT_TOKEN e incluir com --env-file .env.
 
-### Manualmente
+Rodando Localmente (sem Docker)
+Instale as dependências:
 
-```bash
+``` bash
 mix deps.get
+```
+Inicie o bot:
+
+``` bash
 mix run --no-halt
 ```
+Isso iniciará o Botzilla e o conectará ao seu servidor Discord, pronto para responder aos comandos configurados.
 
 
-Isso iniciará o Botzilla no seu servidor Discord.
+
