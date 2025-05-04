@@ -30,7 +30,7 @@ Botzilla oferece os seguintes comandos:
 - `!clima`: Envia informações resumidas sobre o clima.
 - `!piada`: Envia uma piada aleatória.
 - `!nba <time>`: Pesquisa e envia informações sobre um time de basquete da NBA.
-- `!jogos`: Envia uma lista de jogos de futebol do dia.
+- `!jogoshoje`: Envia uma lista de jogos de futebol do dia.
 - `!jogosgratis`: Envia uma lista de jogos gratuitos disponíveis para PC.
 
 ### APIs Integradas
